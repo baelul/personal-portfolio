@@ -1,0 +1,83 @@
+* {
+  font-family: Fira Code;
+  background-color: #f0f8ff;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #f0f8ff;
+  font-weight: 700;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  text-overflow: clip;
+  float: right;
+  font-size: 16px;
+  color: #70bcff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+  
+/* Dropdown button */
+.dropbtn {
+  border: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+  
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  color: #b0daff;
+}
+  
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  padding-top: 5%;
+  position: absolute;
+  max-width: 109px;
+  z-index: -1;
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  float: none;
+  color: #70bcff;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+  
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  color: #b0daff;
+}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
