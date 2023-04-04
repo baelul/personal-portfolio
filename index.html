@@ -1,47 +1,156 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
 
-        <!-- fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        <!-- style sheet -->
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <!-- <script src="" async defer></script> -->
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">Baelul Haile</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <!-- <li><a href="#contact">Contact</a></li> -->
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        <!-- <div class="line4"></div> -->
+      </div>
+    </nav>
+    
 
-        <div class="navbar">
-          <a href="">Home</a>
-          <a href="#about">About Me</a>
-          <div class="dropdown">
-            <a class="proj-butn fa fa-caret-down" href="/project.html">Projects</a>
-            <div class="dropdown-content">
-              <a href="/algo.html">Algorithms</a>
-              <a href="/games.html">Games</a>
-              <a href="/webdev.html">Web Development</a>
-            </div>
+    <!-- Header
+    <header>
+      <div class="header-content">
+        <h1>Welcome to my portfolio</h1>
+        <p>Senior Computer Science major at NYU</p>
+      </div>
+    </header> -->
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-container">
+          <div class="about-img">
+            <img src="https://via.placeholder.com/300" alt="Profile Picture">
+          </div>
+          <div class="about-text">
+            <h3>Baelul Haile</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec justo in urna bibendum vestibulum eu a nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec eleifend nunc eu leo commodo suscipit.</p>
+            <p>Nulla in erat nec velit semper rutrum eget eget lectus. Aenean fermentum nisi a est posuere dignissim. Donec tristique, turpis euismod bibendum dignissim, tellus nisl lacinia tellus, et pellentesque lorem sapien vitae erat.</p>
           </div>
         </div>
       </div>
+    </section>
 
+    <!-- Skill -->
+    <section id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-list">
+          <div class="skill">
+            <h3>Programming Languages</h3>
+            <ul>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>C++</li>
+            </ul>
+          </div>
+          <div class="skill">
+            <h3>Web Technologies</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Bootstrap</li>
+              <li>React</li>
+            </ul>
+          </div>
+          <div class="skill">
+            <h3>Other Skills</h3>
+            <ul>
+              <li>Git</li>
+              <li>SQL</li>
+              <li>Linux</li>
+              <li>Problem Solving</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>    
+    
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="img/project1.jpg" alt="Project 1">
+          <div class="project-info">
+            <h3>Project 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat justo at semper pulvinar.</p>
+            <a href="#">View Project</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="img/project2.jpg" alt="Project 2">
+          <div class="project-info">
+            <h3>Project 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat justo at semper pulvinar.</p>
+            <a href="#">View Project</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="img/project3.jpg" alt="Project 3">
+          <div class="project-info">
+            <h3>Project 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat justo at semper pulvinar.</p>
+            <a href="#">View Project</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="img/project4.jpg" alt="Project 4">
+          <div class="project-info">
+            <h3>Project 4</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat justo at semper pulvinar.</p>
+            <a href="#">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>    
 
-        <!-- Load React. -->
-        <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-        <!-- <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script> -->
-        <!-- <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script> -->
+    <!-- Contact -->
+    <!-- <section id="contact">
+      <div class="contact-container">
+        <h2>Contact Me</h2>
+        <form class="contact-form" action="mailto:youremail@example.com" method="post" enctype="text/plain">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+          
+          <button type="submit" class="submit-button">Send</button>
+        </form>
+      </div>
+    </section> -->
 
-        <!-- Load our React components. -->
-        <!-- <script src="NAME_OF_COMPONENT.js"></script> -->
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Baelul Haile</p>
+  </footer>
 
-        <!-- <script src="script.js"></script> -->
-    </body>
+  <script src="script.js"></script>
+</body>
 </html>
