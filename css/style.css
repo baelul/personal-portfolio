@@ -438,8 +438,7 @@ body.offcanvas {
   font-weight: 500; }
 
 .hire {
-  padding: 2em;
-  background: #f9bf3f; }
+  padding: 2em;}
   .hire h2 {
     line-height: 1.5; }
   .hire .btn-hire {
@@ -1031,7 +1030,7 @@ body.offcanvas {
   margin-bottom: 5em; }
 
 .colorlib-counters {
-  padding: 3em 0;
+  padding: 2em 0;
   background-size: cover;
   background-attachment: fixed;
   background-position: center center; }
